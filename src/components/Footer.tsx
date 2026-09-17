@@ -5,15 +5,27 @@ export function Footer() {
   return (
     <footer id="contato" className="bg-brand-800 border-t border-brand-700 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-center mb-12">
+          <img src="https://i.ibb.co/Mxv51fvt/b4fa1d-c70feb1c77ba46e490120d5046e33e77-mv2.png" alt="Contrate já a Ativa Serviços" className="max-w-full h-auto max-h-24" />
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 bg-gradient-to-br from-brand-accent to-brand-green rounded flex items-center justify-center font-heading font-bold text-white shadow-[0_0_10px_rgba(16,185,129,0.2)]">A</div>
-              <Link to="/" className="font-heading font-bold text-xl tracking-tight text-white">ATIVA<span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-brand-green">SERV</span></Link>
+              <Link to="/">
+                <img src="https://i.ibb.co/C5Nb0bWF/Logo-Branca-Ativa-Horizontal.png" alt="Ativa Serviços" className="h-10 w-auto" />
+              </Link>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
               Especialistas em fornecer soluções definitivas e personalizadas para o seu negócio através da excelência em terceirização.
             </p>
+            <div className="flex gap-4">
+              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+                <img src="https://static.wixstatic.com/media/40898a93cfff4578b1779073137eb1b4.png" alt="Instagram" className="w-6 h-6 object-contain" />
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+                <img src="https://static.wixstatic.com/media/fcfebdfae12a44f993a94aeed8e2e66b.png" alt="LinkedIn" className="w-6 h-6 object-contain" />
+              </a>
+            </div>
           </div>
           
           <div>

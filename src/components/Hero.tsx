@@ -9,8 +9,8 @@ export function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-brand-900 opacity-90 z-10" />
         <img 
-          src="https://images.unsplash.com/photo-1574360773950-8451121d5167?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
-          alt="Corporate background" 
+          src="https://static.wixstatic.com/media/b4fa1d_812ead6388df4e74bb17666382036e37~mv2.jpg" 
+          alt="Serviços Especializados" 
           className="w-full h-full object-cover object-center mix-blend-overlay"
         />
         {/* Glow effects */}

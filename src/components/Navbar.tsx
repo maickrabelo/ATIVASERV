@@ -10,9 +10,8 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-brand-900/80 backdrop-blur-md border-b border-brand-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex-shrink-0 flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-brand-accent to-brand-green rounded-lg flex items-center justify-center font-heading font-bold text-xl text-white shadow-[0_0_15px_rgba(16,185,129,0.3)]">A</div>
-            <span className="font-heading font-bold text-2xl tracking-tight text-white">ATIVA<span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-brand-green">SERV</span></span>
+          <Link to="/" className="flex-shrink-0 flex items-center">
+            <img src="https://i.ibb.co/C5Nb0bWF/Logo-Branca-Ativa-Horizontal.png" alt="Ativa Serviços" className="h-10 w-auto" />
           </Link>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">

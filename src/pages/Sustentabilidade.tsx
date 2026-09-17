@@ -62,49 +62,62 @@ const ODS_DATA = [
 
 export function Sustentabilidade() {
   return (
-    <div className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">Desenvolvimento Sustentável</h1>
-        <p className="text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
-          Nossa sinergia com os Objetivos de Desenvolvimento Sustentável (ODS) da ONU. Acreditamos que a terceirização responsável e a valorização humana são motores para um futuro mais sustentável.
-        </p>
-      </motion.div>
-
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
-        {ODS_DATA.map((ods, index) => (
-          <motion.div
-            key={ods.id}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
-            className="bg-brand-800/40 rounded-2xl border border-brand-700/50 overflow-hidden flex flex-col sm:flex-row group"
-          >
-            <div 
-              className="sm:w-48 shrink-0 flex flex-col items-center justify-center p-8 transition-transform group-hover:scale-105"
-              style={{ backgroundColor: ods.color }}
-            >
-              <ods.icon className="w-16 h-16 text-white mb-4" />
-              <div className="text-white text-center font-bold text-sm uppercase tracking-wide">
-                ODS {ods.id}
-              </div>
-            </div>
-            <div className="p-8 flex-grow flex flex-col justify-center">
-              <h3 className="text-xl font-heading font-bold text-white mb-4">
-                {ods.id}. {ods.title}
-              </h3>
-              <p className="text-slate-400 leading-relaxed">
-                {ods.desc}
-              </p>
-            </div>
+    <div>
+      <div className="relative py-24 bg-brand-900 overflow-hidden border-b border-brand-800">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://static.wixstatic.com/media/b4fa1d_d0747f4c9a37420fa8db55c603b1ff04~mv2.jpg" 
+            alt="Sustentabilidade Fundo" 
+            className="w-full h-full object-cover opacity-30 mix-blend-overlay"
+          />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">Desenvolvimento Sustentável</h1>
+            <p className="text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
+              Nossa sinergia com os Objetivos de Desenvolvimento Sustentável (ODS) da ONU. Acreditamos que a terceirização responsável e a valorização humana são motores para um futuro mais sustentável.
+            </p>
           </motion.div>
-        ))}
+        </div>
       </div>
 
-      <div className="bg-brand-900 border border-brand-800 p-6 rounded-xl flex gap-4 items-start">
-        <AlertCircle className="w-6 h-6 text-brand-green shrink-0 mt-1" />
-        <p className="text-slate-400 text-sm leading-relaxed">
-          <strong>Aviso:</strong> O uso de tais materiais visuais e conceituais não indica, sob qualquer hipótese, que a Organização das Nações Unidas (ONU) ou qualquer de suas agências endossa, patrocina, fiscaliza, aprova ou possui parceria formal com as atividades, produtos, serviços ou opiniões descritas neste website. Para mais informações sobre as diretrizes oficiais de uso das marcas dos ODS, consulte o site oficial da ONU ou das Nações Unidas Brasil.
-        </p>
+      <div className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
+          {ODS_DATA.map((ods, index) => (
+            <motion.div
+              key={ods.id}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              className="bg-brand-800/40 rounded-2xl border border-brand-700/50 overflow-hidden flex flex-col sm:flex-row group"
+            >
+              <div 
+                className="sm:w-48 shrink-0 flex flex-col items-center justify-center p-8 transition-transform group-hover:scale-105"
+                style={{ backgroundColor: ods.color }}
+              >
+                <ods.icon className="w-16 h-16 text-white mb-4" />
+                <div className="text-white text-center font-bold text-sm uppercase tracking-wide">
+                  ODS {ods.id}
+                </div>
+              </div>
+              <div className="p-8 flex-grow flex flex-col justify-center">
+                <h3 className="text-xl font-heading font-bold text-white mb-4">
+                  {ods.id}. {ods.title}
+                </h3>
+                <p className="text-slate-400 leading-relaxed">
+                  {ods.desc}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        <div className="bg-brand-900 border border-brand-800 p-6 rounded-xl flex gap-4 items-start">
+          <AlertCircle className="w-6 h-6 text-brand-green shrink-0 mt-1" />
+          <p className="text-slate-400 text-sm leading-relaxed">
+            <strong>Aviso:</strong> O uso de tais materiais visuais e conceituais não indica, sob qualquer hipótese, que a Organização das Nações Unidas (ONU) ou qualquer de suas agências endossa, patrocina, fiscaliza, aprova ou possui parceria formal com as atividades, produtos, serviços ou opiniões descritas neste website. Para mais informações sobre as diretrizes oficiais de uso das marcas dos ODS, consulte o site oficial da ONU ou das Nações Unidas Brasil.
+          </p>
+        </div>
       </div>
     </div>
   );
